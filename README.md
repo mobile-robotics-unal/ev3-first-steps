@@ -1,5 +1,13 @@
 # ev3-first-steps
-This repo recollects information about mobile robotics, the ev3 platform, general information on what it is capable of and how to start working with it 
+Universidad Nacional de Colombia Department of Mechanical and Mechatronics Engineering
+
+Team 1:
+
+Juan Sebastián Dueñas
+Camilo Esteban Zambrano
+Daniel Esteban Molano
+Cristhian David Sandoval
+This repo recollects information about mobile robotics, the LEGO EV3 Midstorm platform, general information on what it is capable of and how to start working with it.
 
 ## 1. [What is a mobile robot](1_what_is_a_mobile_robot.md)
 ## 2. [first impression](2_ev3_first_impression.md)
