@@ -3,10 +3,11 @@ Universidad Nacional de Colombia Department of Mechanical and Mechatronics Engin
 
 Team 1:
 
-Juan Sebastián Dueñas
-Camilo Esteban Zambrano
-Daniel Esteban Molano
-Cristhian David Sandoval
+- Juan Sebastián Dueñas
+- Camilo Esteban Zambrano
+- Daniel Esteban Molano
+- Cristhian David Sandoval
+  
 This repo recollects information about mobile robotics, the LEGO EV3 Midstorm platform, general information on what it is capable of and how to start working with it.
 
 ## 1. [What is a mobile robot](1_what_is_a_mobile_robot.md)
