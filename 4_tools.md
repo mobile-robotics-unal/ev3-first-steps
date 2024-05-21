@@ -5,32 +5,44 @@ APIs y lenguajes de programación: Identificar las APIs o librerías disponibles
 robots. Enumerar los lenguajes de programación compatibles con los robots.
 -->
 
-Kobuki has a serial communication protocol to command the behavior of the robot. This allows the usage of any programming language that suports a serial interface as viable path to control the robot. However in practice a C++ library has been already implemented and works as the primary base for interacting with the robot with out the need to meddle with the protocol itself. Chapter 3 of the kobuki documention goes into detail on how to start working with the library and then Chapter 4 dives deeper on creating your applications [1](#references).
+## ROS 
+### Prerequisites
+In order to work with ROS in the EV3 you will need Docker and get the image from docker hub
 
+```
+docker pull ev3dev/debian-stretch-cross
+```
 
-ROS packages have been build over this C++ library in order to integration into the ROS ecosystem. These where build for the ROS verisons: _groovy_, _hydro_, _indigo_ and _kinetic_; altough a work around is known to make it work in _noetic_.
-These packages are composed by the following [4](#references):
+Add a tag to the image for ease of usage
 
-- kobuki_bumper2pc 
-- kobuki_capabilities 
-- kobuki_controller_tutorial 
-- kobuki_description 
-- kobuki_keyop 
-- kobuki_node 
-- kobuki_random_walker 
-- kobuki_rapps 
-- kobuki_safety_controller 
-- kobuki_testsuite
+```
+docker tag ev3dev/debian-stretch-cross ev3cc
+```
 
+Or you can create a dockerfile for extended configuration
 
-Despite a [repo](#references) showing support for the platform in ROS2, it is not active and lacking documentation so the it not well supported for the latest distros. 
+```
+docker build -t ev3dev .
+```
+And then run it
+```
+docker run -i  --rm --name production_container -t  ev3dev:latest  
+```
 
-A different open source implentation of the serial protocol was founded but it was not possible to bet over it´s cuality or completes however it is worth it to point to this resource [6](#references). 
+We created a .devcontainer to develop with vscode inside the container
+
+Once inside the container you can use to compile the code
+```
+arm-linux-gnueabi-gcc -o hello hello.c
+```
+
+```
+qemu-arm-static -L /usr/arm-linux-gnueabi/ ./hello
+```
+
 
 ## References
-1. [kobuki Documentation](https://kobuki.readthedocs.io/_/downloads/en/stable/pdf/)
-2. [kobuki C library repo](https://github.com/kobuki-base/kobuki_core)
-3. [kobuki ROS wrapper repo](https://github.com/yujinrobot/kobuki)
-4. [kobuki ROS documentation](https://wiki.ros.org/kobuki)
-5. [kobuki ROS2 repo](https://github.com/kobuki-base/kobuki_ros?tab=readme-ov-file)
-6. [kobuki serial communcation driver](https://github.com/wuhanstudio/kobuki)
+
+1. [ROS Robot With Lego EV3 and Docker blogpost](https://www.instructables.com/ROS-Robot-With-Lego-EV3-and-Docker/)
+2. [Docker for cross compilation ](https://www.ev3dev.org/docs/tutorials/using-docker-to-cross-compile/)
+3. [ev3 docker](https://hub.docker.com/u/ev3dev)

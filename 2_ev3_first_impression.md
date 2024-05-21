@@ -1,8 +1,8 @@
-# Kobuki First impression
+# EV3 First impression
 
 <!--
 TODO:
-Presentación de los Robots: Descripción detallada de los robots Kuboki incluyendo sus carac-
+Presentación de los Robots: Descripción detallada de los robots EV3incluyendo sus carac-
 terísticas físicas y capacidades
 -->
 
