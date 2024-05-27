@@ -52,7 +52,3 @@ El robot está construido principalmente con piezas de LEGO, lo que le proporcio
 
 * Sensores y Actuadores: La capacidad de integrar múltiples sensores y actuadores permite al EV3 realizar tareas complejas y reactivas, como seguir líneas, evitar obstáculos, detectar colores y más.
 
-
-## References:
-
-1. [Kobuki Docs](https://iclebo-kobuki.readthedocs.io/en/latest/index.html). Consulted: 03/03/2024
