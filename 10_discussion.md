@@ -6,12 +6,12 @@ dizajes y posibles mejoras en el uso del robot Kuboki en aplicaciones prácticas
 -->
 
 
-This first lab intended for familiarizing the students and teaching them the main topics to consider when interacting with a mobile robotic platform prove essential. As we learned about the capabilities and limitations a mobile platform can impose over robotics application we might want to build on top of.
+Este primer laboratorio, destinado a familiarizar a los estudiantes y enseñarles los temas principales a considerar al interactuar con una plataforma robótica móvil, resultó esencial. A medida que aprendimos sobre las capacidades y limitaciones que una plataforma móvil puede imponer sobre la aplicación robótica que queramos desarrollar.
 
-The main conclusions drawn from this experience are as follows:
+Las principales conclusiones extraídas de esta experiencia son las siguientes:
 
-- The importance of software and the support given to the  mobile platform you intent to use. As it woud aid or block the development process. 
+La importancia del software y del soporte proporcionado a la plataforma móvil que se pretende utilizar, ya que puede facilitar o bloquear el proceso de desarrollo.
 
-- The crusial role of having an understanding of the main physical characteristics of a platform and its interaction with sensor as a good indicator of it capabilites.
+* El papel crucial de tener una comprensión de las principales características físicas de una plataforma y su interacción con los sensores como un buen indicador de sus capacidades.
 
-- the exercise provided a great exploration of the kobuki platform and different ways to start the development.
+* El ejercicio proporcionó una gran exploración de la plataforma LEGO EV3 y diferentes maneras de iniciar el desarrollo.
