@@ -8,9 +8,8 @@ cha, etc.
 
 A continuación, hay un breve video del robot después de conectarlo vía USB y usar el software *LEGO MINDSTORMS Education EV3*. Se comprobó el estado de los sensores y se ejecutó un programa que le permite describir un cuadrado.
 
-![](https://github.com/mobile-robotics-unal/ev3-first-steps/assets/161974694/648fb8fc-4e38-4ee3-b237-0478dfc0207c)
+https://github.com/mobile-robotics-unal/ev3-first-steps/assets/161974694/991fe203-f2ec-4ad7-9754-4938b49155fa
 
 
-The previous activities were carried out in the _"Automation and Machines Laboratory"_, and the _" 
-Machines and Tools"_ Laboratory of ***Universidad Nacional de Colombia - Sede Bogotá*** (Mechanical and Mechatronics Engineeering Department).
+
 
