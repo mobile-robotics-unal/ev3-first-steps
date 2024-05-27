@@ -6,81 +6,51 @@ Presentación de los Robots: Descripción detallada de los robots EV3incluyendo 
 terísticas físicas y capacidades
 -->
 
-## What is Kobuki?
+## ¿Qué es Lego EV3?
 
-Kobuki is a mobile robot platform developed by Yujin Robot, a South Korean company, designed for research, education, and development purposes.
+El EV3 es un robot programable parte de la serie LEGO Mindstorms. Esta serie combina piezas de LEGO con componentes electrónicos avanzados para crear robots interactivos y programables. El modelo EV3 es conocido por su versatilidad y capacidad de ser configurado en una amplia variedad de formas y funciones.
 
-The Kobuki platform consists of a wheeled base equipped with sensors and motors for autonomous navigation. It is commonly utilized in academic and industrial environments for tasks such as mapping, surveillance, and human-robot interaction.
+## Descripción Física
 
-## Physical features
+El robot está construido principalmente con piezas de LEGO, lo que le proporciona una estructura robusta y modular. Esto permite personalizar y modificar el robot fácilmente. Los componentes principales del EV3 incluyen:
 
-The Kobuki has a circular shape with a radius of 354mm and a height of 89mm up to the top of the robot. Additionally, it can be fitted with a structure to hold equipment and peripherals, increasing the height of the robot up to 420mm.
+* Brick EV3: Es el cerebro del robot, un bloque programable que contiene el procesador y la memoria, y sirve como la unidad central de control.
+* Motores: Dos motores en los laterales para el control de ruedas. Pero tiene disponibilidad de conectar hasta 4 motores.
+* Ruedas y Estructura: Las ruedas permiten la movilidad, y la estructura construida con piezas Technic ofrece soporte y estabilidad al robot.
 
-<p align="center">
-<img align="center" height="250" src="https://github.com/mobile-robotics-unal/kobuki-first-steps/assets/53503084/4cdffa0b-a1c2-4d47-b0cb-efb0394f6c9a">  
-<img align="center" height="250" src="https://github.com/mobile-robotics-unal/kobuki-first-steps/assets/53503084/cf94b7a4-8848-419b-bf00-1b34cb73e350">  
-</p>
-[!NOTE]  
-Taken from [Turtlebot](https://clearpathrobotics.com/turtlebot-2-open-source-robot/)
+![alt text](figures/ev3.jpeg)
 
+## Descripción de sus Partes
 
-The Kobuki features a differential drive system with two main drive wheels and two passive wheels (one at the front and one at the back). The drive wheels are higher than the passive wheels, resulting in the robot typically balancing on three wheels. The two main wheels have a radius of 35mm and a width of 21mm.
+### Brick EV3
 
+* Pantalla: Muestra información de la programación y el estado del robot.
+* Puertos de Conexión: Para conectar sensores y motores. Tiene puertos numerados de 1 a 4 para sensores y de A a D para motores.
+* Botones de Control: Para navegar por el menú y seleccionar opciones.
+* Altavoz: Permite la salida de sonidos programados.
 
-<p align="center">
-<img align="center" height="250" src="https://github.com/mobile-robotics-unal/kobuki-first-steps/assets/161974694/4e8fb1ca-c8e1-4fcf-bc12-22c30b3ee0d3">  
-<img align="center" height="250" src="https://github.com/mobile-robotics-unal/kobuki-first-steps/assets/161974694/36fc64d3-e5af-419d-bfd5-8f964fa02e62">  
-</p>
-[!NOTE]  
-Taken from [Kobuki Anatomy](https://iclebo-kobuki.readthedocs.io/en/latest/anatomy.html)
+### Motores
 
-The Kobuki robot is equipped with bumpers and cliff sensors, essential safety features that prevent collisions with obstacles or falls from edges. Three bumpers detect contact with objects, while cliff sensors detect proximity to edges or drop-offs, positioned at the right, center, and left sides of the robot.
+* Motores Grandes: Ofrecen alta potencia y son ideales para mover el robot.
+* Motor Mediano: Menos potente pero más rápido, utilizado para tareas que requieren velocidad en lugar de fuerza.
 
 
+### Sensores
 
+* Sensor de Color: Detecta colores y mide la intensidad de la luz. Puede ser utilizado para seguir líneas o distinguir colores en el entorno.
+* Sensor Ultrasónico: Mide la distancia a objetos, lo que permite al robot detectar y evitar obstáculos.
+* Sensor de Toque: Detecta presión, lo que puede ser utilizado para iniciar o detener acciones.
+* Giroscopio: Mide la orientación y el movimiento angular, útil para mantener el equilibrio y controlar giros precisos.
 
-## Electrical features
+### Capacidades Técnicas
 
-### Frontal panel
+* Programabilidad: Puede ser programado usando el software EV3-G, que proporciona una interfaz gráfica de programación basada en bloques, así como otros lenguajes de programación como Python o C++.
 
-The Kobuki's frontal panel is equiped with several connections and I/O functions:
+* Conectividad: Ofrece opciones de conectividad Bluetooth, WiFi y USB para cargar programas y comunicarse con otros dispositivos.
+  
+* Memoria: Tiene memoria interna y soporte para tarjetas microSD, permitiendo el almacenamiento de programas complejos y grandes cantidades de datos.
 
-* 19V/2A Molex output for laptop power supply.
-* 12V/5A Molex output for arm power supply.
-* 12V/1.5A Molex output for Kinect power supply.
-* 5V/1A Molex output for gemneral purposes.
-* Status LED:
-    - Green: Battery at high voltage level.
-    - Orange: Battery at low voltage level.
-    - Green blinking: Battery charging.
-* Two programmable LEDs.
-* USB for data transmition.
-* B0/1/2 programmable buttons.
-* RS232 Serial port:
-    - RX/TX serial data connection at 3.3V.
-    - 4 x Digital inputs.
-    - 4 x Digital outputs.
-    - 4 x Analog inputs.
-* Power adapter of 19V@3.16A
-
-
-<p align="center">
-<img align="center" height="250" src="https://github.com/mobile-robotics-unal/kobuki-first-steps/assets/53503084/4cf87f55-b01d-41fd-b5db-f70c7bbd7b4c">  
-</p>
-[!NOTE]
-Taken from [Kobuki Anatomy](https://iclebo-kobuki.readthedocs.io/en/latest/anatomy.html)
-
-## Functional features
-
-* Maximum translational velocity: 70 cm/s
-* Maximum rotational velocity: 180 deg/s
-* Payload: 5kg 
-* Cliff: will not drive off a cliff with a depth greater than 5cm
-* Threshold Climbing: climbs thresholds of 12 mm or lower
-* Rug Climbing: climbs rugs of 12 mm or lower
-* Expected Operating Time: 3/7 hours 
-* Expected Charging Time: 1.5/2.6 hours 
-* Docking: within a 2mx5m area in front of the docking station
+* Sensores y Actuadores: La capacidad de integrar múltiples sensores y actuadores permite al EV3 realizar tareas complejas y reactivas, como seguir líneas, evitar obstáculos, detectar colores y más.
 
 
 ## References:
