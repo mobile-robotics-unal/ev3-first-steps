@@ -10,7 +10,6 @@ terísticas físicas y capacidades
 
 El EV3 es un robot programable parte de la serie LEGO Mindstorms. Esta serie combina piezas de LEGO con componentes electrónicos avanzados para crear robots interactivos y programables. El modelo EV3 es conocido por su versatilidad y capacidad de ser configurado en una amplia variedad de formas y funciones.
 
-## Descripción Física
 
 El robot está construido principalmente con piezas de LEGO, lo que le proporciona una estructura robusta y modular. Esto permite personalizar y modificar el robot fácilmente. Los componentes principales del EV3 incluyen:
 
@@ -51,4 +50,10 @@ El robot está construido principalmente con piezas de LEGO, lo que le proporcio
 * Memoria: Tiene memoria interna y soporte para tarjetas microSD, permitiendo el almacenamiento de programas complejos y grandes cantidades de datos.
 
 * Sensores y Actuadores: La capacidad de integrar múltiples sensores y actuadores permite al EV3 realizar tareas complejas y reactivas, como seguir líneas, evitar obstáculos, detectar colores y más.
+
+
+### Communincaciones 
+- Cable USB 
+- Comunicación bluetooth 
+- Comunicación WiFi
 
